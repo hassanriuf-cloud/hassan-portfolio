@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hassan | Frontend Developer</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background: linear-gradient(135deg,#0f0c29,#302b63,#24243e);
+    color:white;
+}
+
+/* Navbar */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 10%;
+    position:fixed;
+    width:100%;
+    top:0;
+    backdrop-filter:blur(15px);
+    background:rgba(255,255,255,0.05);
+    border-bottom:1px solid rgba(255,255,255,0.1);
+    z-index:1000;
+}
+
+nav h1{
+    font-size:22px;
+    font-weight:700;
+    letter-spacing:2px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#ff9ad5;
+}
+
+/* Sections */
+section{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:120px 20px;
+}
+
+h2{
+    font-size:42px;
+    margin-bottom:20px;
+    background:linear-gradient(90deg,#ff9ad5,#c77dff);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+p{
+    max-width:600px;
+    opacity:0.85;
+    line-height:1.6;
+}
+
+/* Profile Image */
+.profile-img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:20px;
+    border:4px solid #c77dff;
+    box-shadow:0 0 30px rgba(199,125,255,0.6);
+}
+
+/* Button */
+.btn{
+    margin-top:25px;
+    padding:12px 30px;
+    border-radius:30px;
+    text-decoration:none;
+    background:linear-gradient(90deg,#ff9ad5,#c77dff);
+    color:white;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 20px rgba(199,125,255,0.6);
+}
+
+/* Skills */
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+    margin-top:25px;
+}
+
+.skills span{
+    padding:10px 20px;
+    border-radius:20px;
+    background:rgba(255,255,255,0.08);
+    border:1px solid rgba(255,255,255,0.1);
+    transition:0.3s;
+}
+
+.skills span:hover{
+    background:rgba(255,255,255,0.2);
+}
+
+/* Projects */
+.projects{
+    display:flex;
+    gap:30px;
+    flex-wrap:wrap;
+    justify-content:center;
+    margin-top:30px;
+}
+
+.project-card{
+    width:280px;
+    background:rgba(255,255,255,0.05);
+    border-radius:15px;
+    overflow:hidden;
+    transition:0.3s;
+}
+
+.project-card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.project-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 10px 30px rgba(0,0,0,0.5);
+}
+
+.project-card h3{
+    padding:15px;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:rgba(255,255,255,0.05);
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h1>HASSAN</h1>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section id="home">
+    <img src="images/profile.jpg" alt="Hassan" class="profile-img">
+    <h2>Hello, I'm Hassan ✨</h2>
+    <p>Frontend Developer crafting aesthetic and modern websites using HTML & CSS.</p>
+    <a href="#contact" class="btn">Let's Work Together</a>
+</section>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>I design clean, responsive and beautiful websites with strong focus on UI aesthetics.</p>
+</section>
+
+<section id="skills">
+    <h2>My Skills</h2>
+    <div class="skills">
+        <span>HTML5</span>
+        <span>CSS3</span>
+        <span>Flexbox</span>
+        <span>Responsive Design</span>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>My Projects</h2>
+    <div class="projects">
+        <div class="project-card">
+            <img src="images/project1.jpg" alt="Project 1">
+            <h3>Portfolio Website</h3>
+        </div>
+
+        <div class="project-card">
+            <img src="images/project2.jpg" alt="Project 2">
+            <h3>Landing Page Design</h3>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: hassan@email.com</p>
+    <a href="https://github.com/" target="_blank" class="btn">GitHub Profile</a>
+</section>
+
+<footer>
+    © 2026 Hassan | Designed with 💜
+</footer>
+
+</body>
+</html>
